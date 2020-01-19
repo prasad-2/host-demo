@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  background-color: rgb(80, 80, 80);
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+}
+
+nav {
+  width: 90%;
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  background-color: rgb(100, 100, 100);
+  cursor: pointer;
+  padding: 0.8rem;
+  font-family: sans-serif;
+  color: aliceblue;
+  flex: auto;
+  text-align: center;
+}
+
+nav ul li:hover {
+  background-color: rgb(50, 50, 50);
+  color: aquamarine;
+}
+
+.icon {
+  width: 10%;
+  background-color: rgb(100, 100, 100);
+  text-align: center;
+}
+.fa-shopping-bag {
+  font-size: 2.2rem;
+  color: aliceblue;
+  background-color: rgb(100, 100, 100);
+}
+
+.fa-shopping-bag:hover {
+  color: cyan;
+}
+
+@media all and (max-width: 400px) {
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    text-align: center;
+  }
+  .icon {
+    display: none;
+  }
+}
